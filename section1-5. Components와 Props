@@ -60,7 +60,7 @@
         );
       }
 
-      const Buttons = () => {
+      const Buttons = () => (
         <>
           <button>1</button>
           <button>2</button>
@@ -68,8 +68,8 @@
           <Button number={4} />
           <Button number={5} />
           <Button number={6} />
-        </>;
-      };
+        </>
+      );
 
       ReactDOM.render(Buttons(), rootElement);
     </script>
