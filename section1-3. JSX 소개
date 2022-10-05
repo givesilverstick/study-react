@@ -1,0 +1,73 @@
+<!-- HTML -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <body>
+    <h1>Hello HTML!</h1>
+  </body>
+</html> -->
+
+<!-- JavaScript -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <body>
+    <div id="root"></div>
+    <script>
+      const rootElement = document.getElementById("root"); // root라는 id에 rootElement 선언
+      const element = document.createElement("h1"); // 텍스트의 태그 저장
+      element.textContent = "Hello Javascript"; // 텍스트 저장
+
+      rootElement.appendChild(element); // appendChild를 통해 element라는 요소를 화면에 표시
+    </script>
+  </body>
+</html> -->
+
+<!-- React -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <body>
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <div id="root"></div>
+    <script>
+      const rootElement = document.getElementById("root");
+      const element = React.createElement("h1", {
+        children: "Hello React!" // children에 텍스트 저장
+      });
+
+      ReactDOM.render(element, rootElement); // ReactDOM이 render함수를 통해 element를 rootElement에 넣어 렌더링
+    </script>
+  </body>
+</html> -->
+
+<!-- JSX -->
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <div id="root"></div>
+    <script type="text/babel">
+      // type 속성 넣어줘야 정상 작동
+      const rootElement = document.getElementById("root");
+
+      const text = "Hello JSX!";
+
+      const element = <h1>{text}</h1>;
+
+      ReactDOM.render(element, rootElement); // ReactDOM이 render함수를 통해 element를 rootElement에 넣어 렌더링
+    </script>
+  </body>
+</html>
